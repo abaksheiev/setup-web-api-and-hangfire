@@ -22,20 +22,14 @@ This solution demonstrates how to set up a modern ASP.NET Core Web API project w
 git clone https://github.com/abaksheiev/setup-web-api-and-hangfire.git cd setup-web-api-and-hangfire
 
 2. **Restore dependencies:**
-dotnet restore
+```dotnet restore```
 
 3. **Build the solution:**
-dotnet build
+```dotnet build```
 
 4. **Run the Web API:**
+```dotnet run --project App.Web```
 
 5. **Access the API and Hangfire Dashboard:**
 - API endpoints: `https://localhost:7775` (or as configured in `launchSettings.json`)
 - Hangfire Dashboard: `https://localhost:7775/hangfire`
-
-### Project Structure
-App.Web/                # Main ASP.NET Core Web API project Properties/ launchSettings.json # Launch profiles for local development ... README.md               # This file
-### Configuration
-
-- **launchSettings.json**: Contains profiles for running the API locally (IIS Express, Kestrel, etc.).
-- **Hangfire**: Configured in `Startup.cs` or `Program.cs` (see code for details).
